@@ -1,0 +1,17 @@
+Relations of UML classes:
+volunteer(voldID, name, birthday, email, travelReadinessTime, address)
+Application(reqID PK, appID PK, reqID, volID, lastModifiedTS, valid)
+Request(reqID PK, benID,volNumNeeded, priority, startDate, endDate, reqDate)
+Skill(skillName PK, description)
+InterestArea(interestArea PK)
+Beneficiary (benID PK, name, address)
+
+Relations for associations:
+canDo(skillName PK,volID PK)
+seekJobs(reqID PK, appID PK, volID)
+operatingRange(volID PK, cityID PK)
+whereNeeded(cityID PK, requID PK)
+whatNeeded(interestAreaPK, requID PK)
+canChoose(volID PK, interestArea PK)
+seekVolunteers(reqID PK, benID)
+skillsNeeded(skillName PK, reqID PK, minimumNeed, ImportanceValue)

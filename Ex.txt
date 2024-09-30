@@ -1,0 +1,32 @@
+R1= 
+
+check if BCNF form calculate closures;
+- does it go through all the attributes in the relation
+
+lecture{courseID, date, roomNo, building, roomtype, seats}
+
+roomNo,building -> roomtype
+roomType -> numberofseats
+
+{roomNo, building}T -> {roomNom building, roomtype, noseats}
+no BCNF
+so need decomposing roomNO, building:
+R1={roomNo, building} =>{roomNo, building, roomtype,seats}
+noBCNF form
+so decomposing:
+R11: {rromtype}+->roomtype, no of seats	yes in BCNF now
+R12:{roomtype}-> roomtype UNION R1-R11 -> roomtype, roomNo, building	yes in BCNF now
+ 
+
+R2={roomNO, building UNION lecture-R1} = {roomno, building, courseID,date}
+yes
+{roomtype}T->{roomType, noseats}
+noBCNF
+
+
+::breaking down tables with a lot of redundancies
+changing orginial lecture with a lot of redundancies to a new one:
+ lecture{roomno, building, courseID,date}
+ was R11: roomType{roomType, no. of seats}
+was R12: room{roomNo, building, roomtype}
+	
