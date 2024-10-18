@@ -148,8 +148,6 @@ END IF;
 
  END TRANSACTION; 
 
-
-
 ----------------------------------------------------------------------------------
 --[free choice] (5p) Create a transaction of your own choice and provide a
 --reasoning of your choice.
@@ -189,7 +187,6 @@ END $$;
 -- Commit the transaction if no exception was raised
 COMMIT;   
 
-   
 select *
 from request
 where id = 1
