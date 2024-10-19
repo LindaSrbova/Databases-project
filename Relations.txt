@@ -1,0 +1,15 @@
+Relations of UML classes:
+Volunteer(voID, name, birthday, email, address, city_id, travelReadinessTime)
+Application(id, request_id, volunteer_id, modified, is_valid) + (is_accepted by a Transaction)
+Request(reqID, title(=interestArea), beneficiary_id, number_of_volunteers, priority, startDate, endDate, registerbyDate)
+Skill(skillName, description)
+InterestArea(interestName)
+Beneficiary (benID, name, address, city_id)
+City(cityID, name, geolocation)
+
+Relations for associations:
+skill_assignment(skillName, volID)
+volunteer_range(voID, cityID)
+request_location(request_id, cityID)
+interest_assignment(voID, interestArea)
+request_skill(reqID, skillName, minimumNeedofppl, ImportanceValue)
