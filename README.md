@@ -1,3 +1,6 @@
-Designing a Volunteer Matching System (VMS) with the Finnish Red Cross 
+This project consisted of designing and implementing a Volunteer Matching System for the Finnish Red Cross.
 
-Project work for CS A1155 Databases for Data Science 2024 (Responsible Teacher: Nitin Sawhney)
+It contains:
+- creation of a UML diagram to model the relational database
+- creating and manipulating the database using Python (SQLAlchemy, psycopg2)
+- conducting SQL queries and analyses in DBeaver and Python, and visualizing the results in Python (numpy, pandas)
